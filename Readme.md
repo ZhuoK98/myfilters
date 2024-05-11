@@ -5,7 +5,7 @@
 
 参考：
 
-[UnderstandingKalmanFilter.pdf](References/UnderstandingKalmanFilter.pdf)
+[UnderstandingKalmanFilter.pdf](filters/References/UnderstandingKalmanFilter.pdf)
 
 ## Sigma-Point类型
 - 容积卡尔曼滤波（Cubature Kalman Filter, CKF）
@@ -16,9 +16,9 @@ PS：找了一些参考，但有的实现不同，不太确定算法是否正确
 
 参考：
 
-[Cubature Kalman Filters.pdf](References/Cubature_Kalman_Filters.pdf)
+[Cubature Kalman Filters.pdf](filters/References/Cubature_Kalman_Filters.pdf)
 
-[Unscented Filtering and Nonlinear Estimation.pdf](References/Unscented_Filtering_and_Nonlinear_Estimation.pdf)
+[Unscented Filtering and Nonlinear Estimation.pdf](filters/References/Unscented_Filtering_and_Nonlinear_Estimation.pdf)
 
 ## 最小二乘
 - 递归最小二乘滤波（Recursive Least Square Filter）
@@ -35,9 +35,9 @@ PS：2020年提出的新算法，从标准卡尔曼滤波改进而来，~~可以
 
 参考：
 
-[The_Sliding_Innovation_Filter.pdf](References/The_Sliding_Innovation_Filter.pdf)
+[The_Sliding_Innovation_Filter.pdf](filters/References/The_Sliding_Innovation_Filter.pdf)
 
-[An_Adaptive_Formulation_of_the_Sliding_Innovation_Filter.pdf](References/An_Adaptive_Formulation_of_the_Sliding_Innovation_Filter.pdf)
+[An_Adaptive_Formulation_of_the_Sliding_Innovation_Filter.pdf](filters/References/An_Adaptive_Formulation_of_the_Sliding_Innovation_Filter.pdf)
 
 # 依赖
 - numpy
@@ -61,7 +61,9 @@ python ./filters/filters_all_together.py
 python ./filters/test/test_all.py
 ```
 选择匀加速直线运动，位移为观测量，结果如下图：
+
 ![](./filters/images/all_together.svg)
+
 注：由于系统模型非线性， KF 和 SIF 不适用；最小二乘不需要基于系统模型也不适用
 
 # 文件说明
